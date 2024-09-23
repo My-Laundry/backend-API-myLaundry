@@ -96,7 +96,7 @@ func Login(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"success": true,
 		"message": "Login successful!",
-		"code":    200,
+		"code":    http.StatusOK,
 		"data": gin.H{
 			"token": token,
 			"role":  user.Role,
